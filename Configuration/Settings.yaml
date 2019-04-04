@@ -1,0 +1,8 @@
+Neos:
+  Fusion:
+    defaultContext:
+      'BEM': 'Wwwision\BEM\EelHelper\BemHelper'
+  Neos:
+    fusion:
+      autoInclude:
+        'Wwwision.BEM': true

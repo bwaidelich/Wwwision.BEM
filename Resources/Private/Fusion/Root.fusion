@@ -1,0 +1,31 @@
+# Prototype rendering BEM style class names (see http://getbem.com/)
+#
+# Usage:
+#
+# root.@context.block = Wwwision.BEM:Block {
+#   block = 'some-block'
+#   modifiers {
+#     'mod-1' = ${true}
+#     dynamic = Wwwision.BEM:Modifier {
+#       name = ${'date-' + Date.format(Date.now(), 'Y-m-d')}
+#     }
+#   }
+# }
+# root = afx`
+#   block with modifiers: {block}
+#   element: {block.element('some-element')}
+#   sub-block: {block.extend('sub')}
+# `
+#
+prototype(Wwwision.BEM:Block) {
+    @class = 'Wwwision\\BEM\\Fusion\\BlockImplementation'
+
+    block = ''
+    modifiers = Neos.Fusion:DataStructure
+}
+
+# Modifier data structure (see example above)
+prototype(Wwwision.BEM:Modifier) < prototype(Neos.Fusion:DataStructure) {
+    name = ''
+    active = ${true}
+}

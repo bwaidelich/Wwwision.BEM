@@ -1,0 +1,15 @@
+{
+    "name": "wwwision/bem",
+    "description": "BEM style classes (see http://getbem.com/) with Neos Fusion",
+    "type": "neos-package",
+    "autoload": {
+        "psr-4": {
+            "Wwwision\\BEM\\": "Classes"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Wwwision.BEM"
+        }
+    }
+}
