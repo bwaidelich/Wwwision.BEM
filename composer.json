@@ -3,6 +3,9 @@
     "description": "BEM style classes (see http://getbem.com/) with Neos Fusion",
     "type": "neos-package",
     "license": "MIT",
+    "require": {
+        "neos/fusion": "^4.2"
+    },
     "autoload": {
         "psr-4": {
             "Wwwision\\BEM\\": "Classes"
