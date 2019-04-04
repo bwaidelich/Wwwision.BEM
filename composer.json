@@ -2,6 +2,7 @@
     "name": "wwwision/bem",
     "description": "BEM style classes (see http://getbem.com/) with Neos Fusion",
     "type": "neos-package",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Wwwision\\BEM\\": "Classes"
@@ -11,5 +12,5 @@
         "neos": {
             "package-key": "Wwwision.BEM"
         }
-    }
+    },
 }
