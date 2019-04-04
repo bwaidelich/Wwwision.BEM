@@ -58,7 +58,7 @@ root = Wwwision.BEM:Block {
 The helpers are especially useful in conjunction with AFX Components:
 
 ```
-prototype(SomeComponent) < prototype(Neos.Fusion:Component) {
+prototype(Some:Component) < prototype(Neos.Fusion:Component) {
 
     header = ''
     content = ''
@@ -83,15 +83,16 @@ prototype(SomeComponent) < prototype(Neos.Fusion:Component) {
         </section>
     `
 }
+
+root = afx`<Some:Component header="some header" content="some content" level={2} />`
 ```
 
 This would result in the following markup:
 
 ```html
-
-<section class="some-block some-block--foo some-block--level-1">
-    <h1 class="some-block__header">the head</h1>
-    <p class="some-block__content">the content</p>
+<section class="some-block some-block--foo some-block--level-2">
+    <h1 class="some-block__header">some header</h1>
+    <p class="some-block__content">some content</p>
     <div class="some-block-nested">...</div>
 </section>
 ```
